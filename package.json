@@ -56,6 +56,18 @@
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
+            },
+            "facebook_url": {
+                "type": "text",
+                "default": ""
+            },
+            "youtube_url": {
+                "type": "text",
+                "default": ""
+            },
+            "tiktok_url": {
+                "type": "text",
+                "default": ""
             }
         }
     },
