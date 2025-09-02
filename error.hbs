@@ -1,0 +1,14 @@
+{{!< default}}
+
+<main id="gh-main" class="gh-main gh-outer">
+    <div class="gh-inner gh-error">
+        {{#match statusCode 404}}
+            <h1>Không tìm thấy trang</h1>
+            <p>Trang bạn đang tìm kiếm có thể đã bị xóa hoặc chưa bao giờ tồn tại.</p>
+        {{else}}
+            <h1>Có lỗi xảy ra</h1>
+            <p>Chúng tôi không thể xử lý yêu cầu của bạn.</p>
+        {{/match}}
+        <a class="gh-btn" href="{{@site.url}}">Quay về trang chủ</a>
+    </div>
+</main>
