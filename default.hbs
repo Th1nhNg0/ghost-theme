@@ -98,7 +98,24 @@
                     {{navigation type="secondary"}}
                 </nav>
             {{/if}}
-           
+            <div class="gh-foot-info">
+                {{#if @custom.footer_text}}
+                    {{@custom.footer_text}}
+                {{else}}
+                    {{@site.description}}
+                {{/if}}
+            </div>
+            <div class="gh-social">
+                {{#if @custom.facebook_url}}
+                    <a href="{{@custom.facebook_url}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+                {{/if}}
+                {{#if @custom.youtube_url}}
+                    <a href="{{@custom.youtube_url}}" target="_blank" rel="noopener">{{> "icons/youtube"}}</a>
+                {{/if}}
+                {{#if @custom.tiktok_url}}
+                    <a href="{{@custom.tiktok_url}}" target="_blank" rel="noopener">{{> "icons/tiktok"}}</a>
+                {{/if}}
+            </div>
         </div>
     </footer>
 
