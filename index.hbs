@@ -57,16 +57,14 @@
                     <h2 class="gh-section-title">Giới thiệu</h2>
 
                     <div class="gh-about">
-                        {{#if @site.icon}}
-                            <img class="gh-about-icon" src="{{@site.icon}}" alt="{{@site.title}}">
-                        {{/if}}
-
                         <section class="gh-about-wrapper">
                             <h3 class="gh-about-title">{{@site.title}}</h3>
 
                             {{#if @site.description}}
                                 <p class="gh-about-description">{{@site.description}}</p>
                             {{/if}}
+
+                            <a class="gh-about-btn gh-btn" href="/gioi-thieu/">Xem thêm</a>
                         </section>
                     </div>
 
